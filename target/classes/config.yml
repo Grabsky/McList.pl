@@ -1,0 +1,29 @@
+
+# McList.pl - by Xayanix
+# Wersja stabilna i bezpieczna.
+
+# Wiadomości:
+messages:
+  success: "&aDziekujemy za oddanie glos na nasz serwer, oto Twoja nagroda!"
+  connecting: "&cWysylanie zapytania do serwera API McList.pl..."
+  failed: "&cNie polubiles jeszcze dzis naszego serwera, zrob to na www.mclist.pl"
+  cooldown: "&cTa komende mozna uzywac raz na 30 sekund."
+  already_received_reward: "&cOtrzymales juz nagrode, sprobuj ponownie po 24:00."
+  no_permission: "&cNie posiadasz uprawnienia &6mclist.odbierz&c do uzycia tej komendy."
+  api_exception: "&cWystapil problem po stronie serwera, zglos ta sytuacje administracji."
+
+
+# Konfiguracja główna
+
+# IP SERWERA ZE STRONY WWW.MCLIST.PL
+# UWAGA: UPEWNIJ SIĘ, ŻE PRZEPISALES DOKLADNIE IP SERWERA ZE STRONY
+server-ip: 'twojserwer.pl'
+
+# CZAS OCZEKIWANIA POMIEDZY UZYCIEM KOMENDY MCLIST (w milisekundach, 30000ms = 30 sekund)
+command-cooldown: 30000
+
+# KOMENDY WYKONYWANE PRZY PRZYZNAWANIU NAGRODY
+commands:
+  - "/give %player% DIAMOND 32"
+  - "/say %player% zaglosowal na nasz serwer na www.mclist.pl!"
+

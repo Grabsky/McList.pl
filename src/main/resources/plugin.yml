@@ -1,0 +1,8 @@
+name: McListpl
+author: Xayanix
+version: 1.2
+main: pl.xayanix.mclist.McList
+commands:
+  mclist:
+    aliases: [mclistpl]
+    description: Odbieranie nagrody za lajkowanie serwera
