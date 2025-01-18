@@ -9,13 +9,12 @@ public class ColouredMessage {
     private final String message;
 
     public ColouredMessage(String message){
-        this.message = message.replace("&", "§");
+        this.message = message.replace("&", "").replace("§", "");
     }
 
     public void sendMessage(CommandSender commandSender){
-        if ("".equals(this.message) == true)
-            return;
-        commandSender.sendMessage(this.message);
+        if ("".equals(this.message) == false)
+            commandSender.sendRichMessage(this.message);
     }
 
 }
