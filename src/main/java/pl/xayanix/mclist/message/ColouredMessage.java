@@ -13,6 +13,8 @@ public class ColouredMessage {
     }
 
     public void sendMessage(CommandSender commandSender){
+        if ("".equals(this.message) == true)
+            return;
         commandSender.sendMessage(this.message);
     }
 
